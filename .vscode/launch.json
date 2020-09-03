@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open holaMundo.html",
+            "file": "c:\\Users\\n_zav\\Documents\\codigo-online-4\\semana1\\holaMundo.html"
+        }
+    ]
+}
