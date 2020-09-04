@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrarse</title>
+</head>
+<body>
+    <h1>Registrarse</h1>
+    <a href="iniciarsesion.html">Iniciar Sesión</a>
+    <a href="#">Registrarse</a>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="inputNombre">Nombre Completo: </label>
+                </td>
+                <td>
+                    <input type="text" id="inputNombre" 
+                    placeholder="Ingrese Nombres Completo"
+                    required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputApellido">Apellidos: </label>
+                </td>
+                <td>
+                    <input type="text" id="inputApellido" 
+                    placeholder="Ingrese Apellidos Completos"
+                    required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputEdad">Edad: </label>
+                </td>
+                <td>
+                    <input type="number" id="inputEdad" 
+                    placeholder="Ingrese Edad" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="inputFechaNacimiento">Fecha de Nacimiento: </label>
+                </td>
+                <td><input type="date" id="inputFechaNacimiento" value="1994-04-15"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputCorreo">Correo: </label>
+                </td>
+                <td>
+                    <input type="email" 
+                    placeholder="Ingrese Correo" 
+                    value="@gmail.com" id="inputCorreo">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="inputContraseña">Contraseña: </label>
+                </td>
+                <td><input type="password" id="inputContraseña"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Sexo: </label>
+                </td>
+                <td>
+                    <label for="inputRadioM">Masculino</label>
+                    <input type="radio" name="genero" id="inputRadioM" checked>
+                    <label for="inputRadioF">Femenino</label>
+                    <input type="radio" name="genero" id="inputRadioF">
+                    <label for="inputRadioO">Otros</label>
+                    <input type="radio" name="genero" id="inputRadioO">
+                </td>
+            </>
+
+            <tr>
+                <td>
+                    <label>Idiomas: </label>
+                </td>
+                <td>
+                    <label for="checkIngles">Español</label>
+                    <input type="checkbox" id="checkIngles" checked>
+                    <label for="checkEspañol">Inglés</label>
+                    <input type="checkbox" id="checkEspañol">
+                    <label for="checkPortugues">Portugués</label>
+                    <input type="checkbox" id="checkPortugues">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Seleccione Nivel de Estudio: </label>
+                </td>
+                <td>
+                    <select name="" id="slcNivelEstudio">
+                        <option value="">Seleccione Nivel Estudio</option>
+                        <option value="">Universitario</option>
+                        <option value="">Técnico</option>
+                        <option value="">Secundaria Completa</option>
+                        <option value="">Primaria Completa</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="txtArea">Descripcion: </label>
+                </td>
+                <td>
+                    <textarea 
+                    name="" 
+                    id="txtDescripcion" 
+                    cols="30" 
+                    rows="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputFileSubirArchivo">Ingrese su CV: </label>
+                </td>
+                <td>
+                    <input type="file" name="" id="inputFileSubirArchivo">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputColor">Color Base: </label>
+                </td>
+                <td>
+                    <input type="color" id="inputColor" required>
+                </td>
+            </tr>
+        </table>
+    </form>    
+</body>
+</html>
