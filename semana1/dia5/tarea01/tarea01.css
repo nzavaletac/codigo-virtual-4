@@ -1,0 +1,33 @@
+body{
+    background: black;
+    text-align: center;
+}
+header{
+    background: red;
+    color: white;
+}
+
+nav{
+    background: orange;
+    color: white;
+}
+
+section{
+    background: yellow;
+    color: white;
+}
+
+article{
+    background: green;
+    color: white;
+}
+
+aside{
+    background: blue;
+    color: white;
+}
+
+footer{
+    background: purple;
+    color: white;
+}

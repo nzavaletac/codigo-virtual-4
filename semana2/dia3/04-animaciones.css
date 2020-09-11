@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.card{
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: #aaa 0px 0px 10px;
+}
+.card:hover{
+    animation: mover 1s ease-in-out 0s infinite normal ;
+}
+@keyframes mover{
+    /**Es recomendable de que el punto
+    inicial o 0% sea igual  al elemento sin animaciones*/
+    0%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: indianred;
+        transform: scale(1.05, 1.05);
+    }
+    100%{
+        background-color: #fff;
+    }
+}
+.boton{
+    padding:  5px 10px;
+    border: none;
+    background-color: #410467;
+    color: white;
+    margin-left: 20px;
+    border-radius: 3px;
+    width: 100px;
+    transition: box-shadow 2s ease;
+}
+.boton:hover{
+    /*border-left: 20px solid #883db6;*/
+    box-shadow: #883db6 100px 0px inset;
+
+}

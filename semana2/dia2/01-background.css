@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.seccion1 {
+    height: 100px;
+    /*Color de fondo*/
+    background-color: #444;
+}
+
+.seccion {
+    height: 200px;
+    /*Color de fondo*/
+    background-image: url(https://almacenamientoit.ituser.es/files/201805/storyblocks-cloudy-blue-sky-background-r8bihuv-1z.jpg-2_2.jpg);
+    /*Conrolar la repetición de la imagen*/
+    background-repeat: no-repeat;
+    /*Controlar la posicion de la imagen*/
+    /*center - left - -right*/
+    background-position: center;
+    /**/
+    background-size: cover;
+}
+
+.seccion2__titulo {
+    height: 200px;
+    background-color: rgba(40, 40, 40, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.seccion3 {
+    height: 500px;
+    /*Colocando una gradiente*/
+    /*background-image: -webkit-linear-gradient(top, #dd1122, #ff7700);*/
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #0f9b0f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #0f9b0f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

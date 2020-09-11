@@ -1,0 +1,22 @@
+/*:nth-child(<posicion>)*/
+/*Obedece siempre y ciando esten en el mismo nivel*/
+li:nth-child(2){
+    color: blue;
+}
+/*Cambiar el primer elemento*/
+li:first-child{
+    color: red;
+}
+/*Cambiar el ultimo elemento*/
+li:last-child{
+    color: salmon;
+}
+/* odd - even */
+/* impar*/
+tbody tr:nth-child(odd){
+    background: purple;
+}
+/* Par */
+tbody tr:nth-child(even){
+    background: red;
+}
