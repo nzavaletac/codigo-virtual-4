@@ -1,0 +1,33 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+body{
+    background-color: #abffab;
+    border: 10px solid red;
+}
+/* Agrehando mediaqueries */
+/* 1. Los mediaqueries deben ser ordenados de
+forma descendente , es decir primero las resoluciones
+mas grande y luego las mas pequeñas */
+/* El mediaquery a continuacion, serán una serie 
+de reglas que se aplicarán a la pagina , siempre y cuando
+el ancho del viewport, 
+es lo mismo decir , un tamaño maximo de 1024px */
+@media (max-width: 1024px){
+    body{
+        background-color: #fbd07f;
+    }
+}
+@media (max-width: 768px){
+    body{
+        background-color: #a7c6ff;
+    }
+}
+@media (max-width: 480px){
+    body{
+        background-color: #fda8ef;
+        border: 2px solid red;
+    }
+}
