@@ -1,0 +1,39 @@
+body {
+    background-color: #444;
+  }
+  .titulo{
+    text-align: center;
+  }
+  .container {
+    background-color: white;
+    border: 1px solid #ccc;
+    max-width: 500px;
+    border-radius: 1rem;
+    margin: auto;
+    box-shadow: 0px 0px 20px #bbb;
+    padding: 2rem;
+  }
+
+  /* form input {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  } */
+
+  /* .texto-rojo {
+    color: #dc143c;
+  }
+
+  .borde-rojo {
+    border: 3px solid #dc143c;
+  }
+
+  .paper {
+    background-color: #fafafa;
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+
+  table {
+    width: 100%;
+  } */

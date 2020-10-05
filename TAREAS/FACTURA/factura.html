@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./factura.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Emitir Factura</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo">Emision de Factura</h1>
+        <br>
+        <!-- INICIO FORMULARIO -->
+        <form id="formulario">
+            <!-- INICIO Datos de Factura y Cliente -->
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="nombres">Razon Social o Apellidos y Nombres</label>
+                    <input type="text" class="form-control" id="nombres"
+                        placeholder="Razon Social o Apellidos y Nombres" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="ruc">Ruc</label>
+                    <input type="text" class="form-control" id="ruc" placeholder="Ruc" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="serie">Serie</label>
+                    <input type="text" class="form-control" id="serie" placeholder="Serie" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="nroFact">Nro. Fact.</label>
+                    <input type="number" class="form-control" id="nroFact" placeholder="Nro. Fact." required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="direccion">Dirección Fiscal</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección Fiscal" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" class="form-control" id="fecha" placeholder="Fecha" readonly>
+                </div>
+            </div>
+            <!-- FIN Datos de Factura y Cliente -->
+
+            <!-- INICIO Agregar Productos-->
+            <h2 class="titulo">Agregar Productos</h2>
+            <div class="form-row">
+                <div class="form-group col-md-1">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" 
+                    placeholder="Cant." required oninput="calcularTotal()">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" 
+                    placeholder="Descripcion" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="precioUnitario">P. Unitario</label>
+                    <input type="number" class="form-control" id="precioUnitario" 
+                    placeholder="P. Unitario" required  step="0.01" oninput="calcularTotal()">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="precioTotal">P. Total</label>
+                    <input type="number" class="form-control" id="precioTotal" 
+                    placeholder="P. Total" step="0.01" readonly>
+                </div>
+            </div>
+            <!-- FIN Agregar Productos -->
+            <!-- INICIO BOTONES -->
+            <div>
+                <button class="btn btn-success" type="submit">Agregar</button>
+                <button class="btn btn-danger" type="button">Cancelar</button>
+            </div>
+            <!-- FIN BOTONES -->
+        </form>
+        <!-- FIN FORMULARIO -->
+
+
+        <br>
+        <!-- INICIO DETALLE FACTURA -->
+        <h2 class="titulo">Detalle</h2>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>#</th>
+                    <th>Cant</th>
+                    <th>Descripción</th>
+                    <th>P. Unitario</th>
+                    <th>P. Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        <!-- FIN DETALLE FACTURA -->
+
+        <script src="./factura.js"></script>
+</body>
+
+</html>
+

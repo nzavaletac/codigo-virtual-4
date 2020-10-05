@@ -22,6 +22,12 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
+        .texto-rojo{
+            color: crimson;
+        }
+        .borde-rojo{
+            border: 1px solid crimson;
+        }
     </style>
 </head>
 <body>
@@ -30,10 +36,13 @@
         <input type="text" placeholder="Ingrese Nombre" id="inputNombre">
         <label for="">Apellido:</label>
         <input type="text" placeholder="Ingrese Apellido" id="inputApellido">
+        <a href="https://www.google.com" id="link" target="">¿Olvidaste tu contraseña?</a>
+        <br>
+        <small class="texto-rojo" id="helper" hidden>Todos los campos deben estar llenos</small>
+        <hr>
         <button type="submit" id="">Crear Usuario</button>
         <button type="button">Cancelar</button>
-        <hr>
-        <a href="https://www.google.com" id="link" target="">¿Olvidaste tu contraseña?</a>
+        
     </form>
     <section>
         <table border="1">
@@ -42,6 +51,7 @@
                     <th>Nro.</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -53,3 +63,4 @@
     <script src="./04-eventos-forms.js"></script>
 </body>
 </html>
+
